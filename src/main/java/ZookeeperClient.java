@@ -16,7 +16,7 @@ public class ZookeeperClient {
             public void process(WatchedEvent watchedEvent) {
                 System.out.println("rec watch event is---"+watchedEvent);
                 if(watchedEvent.getState()== Event.KeeperState.SyncConnected){
-                    cdl.countDown();
+                    cdl.countDown();//123
                 }
             }
         };
