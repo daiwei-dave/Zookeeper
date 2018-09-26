@@ -10,7 +10,7 @@ public class ZookeeperClient {
     private Watcher watcher;
     private AsyncCallback.StringCallback stringCallback;
     private final CountDownLatch cdl=new CountDownLatch(1);
-    private final String connStr="154.127.52.173:2181/newbee";
+    private final String connStr="localhost:2181/newbee";
     private void initServer()throws Exception{
          this.watcher=new Watcher() {
             public void process(WatchedEvent watchedEvent) {

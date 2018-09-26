@@ -14,7 +14,7 @@ public class ZookeeperClientNew {
     private AsyncCallback.StringCallback stringCallback;
     private AsyncCallback.ChildrenCallback childrenCallback;
     private ZooKeeper zk;
-    private final String connStr="154.127.52.173:2181/zk-book";
+    private final String connStr="localhost:2181/zk-book";
     private final CountDownLatch cdl=new CountDownLatch(1);
 
     public ZookeeperClientNew() {
